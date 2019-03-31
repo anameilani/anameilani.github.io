@@ -1,55 +1,26 @@
-<!DOCTYPE> 
+<!DOCTYPE html>
+
 <html>
     <head>
-        <title>Clave Patisserie</title>
+        <meta charset="UTF-8"> 
+        <title>Quiz</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Quicksand" rel="stylesheet"> 
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
-
     <body>
-        <header>
-            <h1>Clave Patisserie</h1>
-            <h2>
-                <nav>
-                    <a href="https://www.google.com/" target="_blank">Home</a>
-                    <a href="https://www.google.com/" target="_blank">Order</a>
-                    <a href="https://www.google.com/" target="_blank">Contact-Us</a>
-                </nav>
-            </h2>
-        </header>
-
-        <main>
-            <h3 class= description>Clave Patisserie is cake shop which was opened from 2010.
-                We provide a variety of cakes specializing in chocolate and cheesecakes.
-                In addition we have a signature cookie, the macarons.</h3><br>
-            <div class="signature">Our Signature Cake and Cookies</div><br>
-            <div class="menu-cake">
-                <div class="cake">
-                    <h3>Macarons</h3>
-                    <img src="https://www.tasteofhome.com/wp-content/uploads/0001/01/French-Macarons_EXPS_HCCBZ18_226955_C05_25_10b-696x696.jpg"/>
-                    <h4>Chocolate Cokies Macarons</h4>
-                    <div class="desc-cake">This is our signature macarons with the belgium chocolate filling.</div>
-                </div>
-                <div class="cake">
-                    <h3>Chocolate Cake</h3>
-                    <img src="https://www.giverecipe.com/wp-content/uploads/2016/05/strawberry-chocolate-cake-1.jpg"/>
-                    <h4>Chocolate Stawberry</h4>
-                    <div class="desc-cake">This is our signature chocolate cake with the dark chocolate and topping strawberry.</div>
-                </div>
-                <div class="cake">
-                <h3>Cheesecake</h3>
-                    <img src="https://www.homecookingadventure.com/images/recipes/classic_cheesecake_mainimage.jpg">
-                    <h4>Classic Cheesecake</h4>
-                    <div class="desc-cake">This is our signature cheesecake with creamy taste.</div>
-                </div>
-            </div>    
-
-        </main>
-
-        <footer>
-            <h3>Clave Patisserie-2010</h3>
-            <div class="by">by Ana Meilani</div>
-
-        </footer>
-
+       <div class="containerQuiz" id="quiz">
+           <div class="title">Logical Quiz</div>
+           <div class="question" id="question"></div>
+           <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"> </span></label>
+           <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"> </span></label>
+           <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"> </span></label>
+           <label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"> </span></label>
+           <button class="nextBtn" id="nextButton" onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="containerResult" id="result" style="display: none">
+        </div>
+        <script src="question.js"></script>
+        <script src='quizScript.js'></script>
     </body>
 </html>
